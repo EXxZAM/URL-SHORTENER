@@ -15,7 +15,7 @@ root.resizable(0,0)
 # Functions
 def shorter():
     global short_link
-    if 'http' in url_entry.get() or 'htpps' in url_entry.get():
+    if 'http' in url_entry.get() or 'https' in url_entry.get():
         s = pyshorteners.Shortener()
         short_link = s.qpsru.short(url_entry.get())
         result_entry = Entry(root, width=len(short_link)+10)
