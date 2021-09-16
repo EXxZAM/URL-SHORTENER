@@ -15,7 +15,7 @@ pip install pyshortener
 
 import pyshorteners
 s = pyshorteners.Shortener()
-short_link = s.qpsru.short('https://aparat.com')
+short_link = s.chilpit.short('https://aparat.com')
 print(short_link)
 
 ```
