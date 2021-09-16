@@ -17,7 +17,7 @@ def shorter():
     global short_link
     if 'http' in url_entry.get() or 'https' in url_entry.get():
         s = pyshorteners.Shortener()
-        short_link = s.qpsru.short(url_entry.get())
+        short_link = s.chilpit .short(url_entry.get())
         result_entry = Entry(root, width=len(short_link)+10)
         result_entry.insert(0,short_link )
         result_entry.place(relx=0.5, rely=0.7, anchor='c')   
